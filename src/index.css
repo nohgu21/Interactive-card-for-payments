@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+
+.font-typewriter {
+  font-family: 'JetBrains Mono', monospace;
+}

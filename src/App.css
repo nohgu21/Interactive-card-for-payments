@@ -1,0 +1,7 @@
+:root {
+  --font-typewriter: "JetBrains Mono", monospace;
+}
+
+.font-typewriter {
+  font-family: var(--font-typewriter);
+}
