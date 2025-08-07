@@ -103,19 +103,19 @@ function Card() {
               <img
                 src={front}
                 alt="card-front"
-                className="scale-120 relative left-25 top-25"
+                className="scale-130 relative left-25 top-25"
               />
 
               <div className="absolute top-40 left-6 text-white">
                 <img
                   src={circle}
                   alt="card-logo"
-                  className="scale-60 ml-16 mb-8"
+                  className="scale-60 ml-12 mb-8"
                 />
-                <div className="text-xl tracking-widest ml-20 text-center ">
+                <div className="text-xl tracking-widest ml-16 text-center ">
                   0000 0000 0000 0000
                 </div>
-                <div className="text-xs mt-5 tracking-widest flex justify-between pr-6 ml-20">
+                <div className="text-xs mt-5 tracking-widest flex justify-between pr-6 ml-16">
                   <span>APPLESEED JANE</span>
                   <span>09/00</span>
                 </div>
@@ -138,7 +138,7 @@ function Card() {
             <div className="flex flex-col text-center gap-5">
               <img src={complete} alt="Complete" className="w-12 h-12 m-auto" />
               <h1 className="text-2xl font-bold">Thank You!</h1>
-              <p>We've added your card details.</p>
+              <p className="text-[hsl(212,12%,71%)]">We've added your card details.</p>
               <button
                 type="submit"
                 className="w-100 mt-5 text-white bg-[hsl(278,68%,11%)] rounded-sm p-2 hover:bg-[hsl(249,99%,64%)]"
@@ -191,7 +191,7 @@ function Card() {
             <div className="flex flex-col text-center gap-3">
               <img src={complete} alt="Complete" className="w-12 h-12 m-auto" />
               <h1 className="text-2xl font-bold mb-4">Thank You!</h1>
-              <p>We've added your card details.</p>
+              <p className="text-[hsl(212,12%,71%)">We've added your card details.</p>
               <button
                 type="submit"
                 className="text-white bg-[hsl(278,68%,11%)] rounded-sm p-2 hover:bg-[hsl(249,99%,64%)]"
@@ -222,18 +222,18 @@ function Card() {
             <img
               src={front}
               alt="card-front"
-              className="scale-120 relative left-25 top-28"
+              className="scale-130 relative left-25 top-28"
             />
             <div className="absolute top-39 left-6 text-white">
               <img
                 src={circle}
                 alt="card-logo"
-                className="scale-60 ml-16 mt-5"
+                className="scale-60 ml-12 mt-5"
               />
-              <div className="text-xl tracking-widest ml-20 mt-5">
+              <div className="text-xl tracking-widest ml-16 mt-5">
                 {form.cardNumber || "9591 6481 6389 101E"}
               </div>
-              <div className="text-xs mt-6 tracking-widest flex justify-between pr-6 ml-20">
+              <div className="text-xs mt-6 tracking-widest flex justify-between pr-6 ml-16">
                 <span>{form.cardName || "VICTORIS LEIRE"}</span>
                 <span className="">
                   {form.expiryMonth || "09"}/{form.expiryYear || "00"}
@@ -359,7 +359,7 @@ function Card() {
                   name="cardCvc"
                   value={form.cardCvc}
                   onChange={handleChange}
-                  className={`border rounded-sm p-2 focus:outline-none ${
+                  className={`border rounded-sm p-2 w-50 focus:outline-none ${
                     errors.cardCvc
                       ? "border-[hsl(0,100%,66%)] focus:border-[hsl(0,100%,66%)]"
                       : "border-[hsl(249,99%,64%)] focus:border-[hsl(249,99%,64%)]"
