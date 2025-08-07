@@ -1,10 +1,10 @@
 import "../App.css";
 import { useState } from "react";
-import image from "../images/bg-main-desktop.png";
-import complete from "../images/icon-complete.svg";
-import front from "../images/bg-card-front.png";
-import back from "../images/bg-card-back.png";
-import circle from "../images/card-logo.svg";
+import image from "../assets/images/bg-main-desktop.png";
+import complete from "../assets/images/icon-complete.svg";
+import front from "../assets/images/bg-card-front.png";
+import back from "../assets/images/bg-card-back.png";
+import circle from "../assets/images/card-logo.svg";
 
 function Card() {
   const [form, setForm] = useState({
