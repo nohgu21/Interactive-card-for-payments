@@ -1,4 +1,4 @@
-Credit Card Form Component
+# Credit Card Form Component
 A React component that shows an interactive credit card form with real-time card preview and validation.
 
 ## What it does
